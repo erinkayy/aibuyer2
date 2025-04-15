@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AI Buyer Next.js App',
-  description: 'Basic Next.js application',
+  title: 'Le Jardin - Design 1',
+  description: 'Elegant plant and flower shop',
 }
 
 export default function RootLayout({
@@ -13,10 +13,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <main className="container mx-auto px-4 py-8">
-          {children}
-        </main>
+      <body className="antialiased">
+        {children}
       </body>
     </html>
   )
