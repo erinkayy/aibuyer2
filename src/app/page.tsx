@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold mb-6">Welcome to Next.js!</h1>
+      <h1 className="text-4xl font-bold mb-6 text-red-600">Welcome to Next.js!</h1>
       <p className="text-xl mb-4">
         Get started by editing <code className="bg-gray-100 p-1 rounded">src/app/page.tsx</code>
       </p>
