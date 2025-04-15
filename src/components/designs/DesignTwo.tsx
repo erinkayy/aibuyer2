@@ -18,26 +18,50 @@ export default function DesignTwo() {
   return (
     <div className="min-h-screen bg-amber-50 font-sans overflow-hidden">
       {/* Sticky Header */}
-      <header className="fixed w-full z-50 bg-white/90 backdrop-blur-sm">
-        <div className="flex justify-between items-center px-6 py-4">
-          <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-rose-600 to-lime-500 rounded-full blur-sm opacity-70"></div>
-            <div className="relative h-12 w-12 rounded-full bg-gradient-to-tr from-rose-500 to-rose-600 flex items-center justify-center">
-              <span className="font-bold text-white text-xl">LJ</span>
+      <header className="fixed w-full z-50 bg-white shadow-md">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-4">
+            <div className="flex items-center">
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-tr from-rose-600 to-lime-500 rounded-full blur-sm opacity-70"></div>
+                <div className="relative h-12 w-12 rounded-full bg-gradient-to-tr from-rose-500 to-rose-600 flex items-center justify-center">
+                  <span className="font-bold text-white text-xl">LJ</span>
+                </div>
+              </div>
+            </div>
+            
+            <nav className="flex items-center">
+              <div className="flex space-x-6">
+                <a href="#" className="text-gray-700 hover:text-rose-600 transition-colors font-semibold text-sm">Collections</a>
+                <a href="#" className="text-gray-700 hover:text-rose-600 transition-colors font-semibold text-sm">Plants</a>
+                <a href="#" className="text-gray-700 hover:text-rose-600 transition-colors font-semibold text-sm">Flowers</a>
+                <a href="#" className="text-gray-700 hover:text-rose-600 transition-colors font-semibold text-sm">Accessories</a>
+                <a href="#" className="text-gray-700 hover:text-rose-600 transition-colors font-semibold text-sm">Care</a>
+              </div>
+            </nav>
+            
+            <div className="flex items-center gap-4">
+              <button className="text-gray-700 hover:text-rose-600 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+              <button className="relative group">
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-rose-600 to-rose-400 rounded-full blur-sm opacity-70 group-hover:opacity-100 transition duration-300"></div>
+                <div className="relative bg-rose-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-rose-500 transition-colors">
+                  Cart (0)
+                </div>
+              </button>
             </div>
           </div>
-          
-          <button className="relative group">
-            <div className="absolute -inset-0.5 bg-gradient-to-r from-rose-600 to-rose-400 rounded-full blur-sm opacity-70 group-hover:opacity-100 transition duration-300"></div>
-            <div className="relative bg-rose-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-rose-500 transition-colors">
-              Cart (0)
-            </div>
-          </button>
         </div>
       </header>
 
+      {/* Container to create space for fixed header */}
+      <div className="h-24"></div>
+
       {/* Sale Announcement Bar */}
-      <div className="bg-gradient-to-r from-lime-500 to-lime-400 text-white py-2 px-4 text-center font-bold text-sm uppercase tracking-wider mt-[4.1rem] shadow-inner">
+      <div className="bg-gradient-to-r from-lime-500 to-lime-400 text-white py-2 px-4 text-center font-bold text-sm uppercase tracking-wider shadow-inner">
         20% OFF HECK YEAH!! Our Spring Sale is here!
       </div>
 
